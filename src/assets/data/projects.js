@@ -12,15 +12,16 @@ const projects = [
     id: uuidv4(),
     name: 'BuyBags',
     desc:
-      ' I developed the website which give info about the all enginnerings colleges of india.',
+      'A virtual ecommerce website using ReactJs,Node js, Express js, and Mongoose. ',
     img: Screenshot,
+    link: 'https://www.github.com/arifahmad17/BuyBags',
   },
   {
     id: uuidv4(),
     name: 'Real Time Chat App',
-    desc:
-      'Real Time Chatting application using React First Create users on Chat Engine Then Start Chatting after logging in.',
+    desc: 'Real Time Chatting application using ChatEngine.io ',
     img: Reactchat,
+    link: 'https://www.github.com/arifahmad17/React-Chat-App',
   },
 ];
 

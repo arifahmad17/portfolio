@@ -35,11 +35,11 @@ const ProjectItemStyles = styled.div`
     }
   }
 `;
-
 export default function ProjectItem({
   img = ProjectImg,
   title = 'Project Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  link = 'https://www.google.com',
 }) {
   return (
     <ProjectItemStyles>
@@ -47,9 +47,12 @@ export default function ProjectItem({
         <img src={img} alt="project img" />
       </Link>
       <div className="projectItem__info">
-        <Link to="#">
-          <h3 className="projectItem__title">{title}</h3>
-        </Link>
+        <h3 className="projectItem__title">
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {title}
+          </a>
+        </h3>
+
         <p className="projectItem__desc">{desc}</p>
       </div>
     </ProjectItemStyles>
